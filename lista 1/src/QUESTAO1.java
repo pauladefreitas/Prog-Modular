@@ -21,7 +21,8 @@ public class QUESTAO1 {
         for (int i = 0; i < tamanho; i++) {
             vetor1[i] = input.nextInt();
         }
-
+        
+        input.close();
         return vetor1;
     }
 

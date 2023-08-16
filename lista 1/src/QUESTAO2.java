@@ -8,6 +8,7 @@ public class QUESTAO2 {
             vetor1[i] = input.nextInt();
         }
 
+        input.close();
         return vetor1;
     }
 
@@ -44,5 +45,7 @@ public class QUESTAO2 {
         preencheVetor(vetor1, tamanho);
         int[] novoVetor = somaParVizinhos(vetor1); 
         imprimirVetor(novoVetor); 
+        
+        input.close();
     }
 }
