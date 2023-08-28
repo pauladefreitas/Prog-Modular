@@ -54,10 +54,6 @@ public class QUESTAO10 {
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } finally {
-            if (input != null) {
-                input.close();
-            }
         }
     }
 }
