@@ -2,13 +2,13 @@ public class DATA {
     
     private byte dia, mes;
     private int ano;
-    
+
     /** Método construtor da classe que separa os valores corretamente entre o dia, mês e ano; e valida se os 
      * valores estão em conformidade com uma data real. 
      * Caso um deles não esteja conforme, reseta os valores para 01/01/1900.
      * @param data
      */
-    public void DATA(String data) {
+    public DATA(String data) {
         String[] partes = data.split("/"); 
 
         this.dia = Byte.parseByte(partes[0]); 
@@ -25,7 +25,7 @@ public class DATA {
     /** Este método valida se a data recebida está de acordo com a notação usada: DD/MM/AAAA.
      * @return Verdadeiro caso esteja válido, Falso caso não válido.
      */
-    private boolean validarData() {
+    boolean validarData() {
         if ((dia >= 1 && dia <= 31) && (mes >= 1 && mes <= 12) && (ano < 9999))
             return true;
         else {
